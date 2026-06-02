@@ -72,21 +72,21 @@ void PrintList(struct Node* node){
 int main(){
     struct Node* head=NULL;
     int num;
-    printf("These values inserte at head. Enter number 1-5\n");
+    printf("These values are goint to be inserte at head. Enter numbers 1-5.\n");
     for(int i=0;i<5;i++){
         printf("Enter number %d : ",i+1);
         scanf("%d",&num);
         InsertAtHead(&head,num);
     }
-    printf("\n\nThese values insert at end. Enter number 6-10\n");
+    printf("\nThese values are going to be insert at end. Enter numbers 6-10.\n");
     for(int j=0;j<5;j++){
         printf("Enter number %d : ",j+1);
         scanf("%d",&num);
         InsertAtEnd(&head,num);
     }
-    printf("\n\nList as you entered\n");
+    printf("\nList as you entered\n");
     PrintList(head);
-    printf("\n\nList after Deletion of 5-Head Value and 10-End value.\n");
+    printf("\nList after Deletion of 5-Head Value and 10-End value.\n");
     DeleteNode(&head,5);
     DeleteNode(&head,10);
     PrintList(head);
